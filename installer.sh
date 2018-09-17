@@ -12,7 +12,7 @@ brew bundle
 # Install dotfiles, Terminal config, and Sublime Text Configs
 mkdir -p ~/.config/
 git clone git@github.com:txemaleon/dotfiles.git ~/.config/dotfiles
-for f in bash_profile fixpackrc gitconfig inputrc npmrc slate tmux.conf vimrc yarnrc; do ln -s ~/.config/dotfiles/$f ~/.$f; done
+for f in bash_profile fixpackrc gitconfig inputrc npmrc slate tmux.conf vimrc; do rm -rf ~/.$f; ln -s ~/.config/dotfiles/$f ~/.$f; done
 
 # Vim Config
 mkdir -p ~/.vim/bundle/
