@@ -12,7 +12,7 @@ brew bundle
 # Install dotfiles, Terminal config, and Sublime Text Configs
 mkdir -p ~/.config/
 git clone git@github.com:txemaleon/dotfiles.git ~/.config/dotfiles
-for f in bash_profile fixpackrc gitconfig inputrc npmrc slate tmux.conf vimrc; do rm -rf ~/.$f; ln -s ~/.config/dotfiles/$f ~/.$f; done
+for f in bash_profile fixpackrc gitconfig gitignore inputrc npmrc slate tmux.conf vimrc zshrc; do rm -rf ~/.$f; ln -s ~/.config/dotfiles/$f ~/.$f; done
 
 # Vim Config
 mkdir -p ~/.vim/bundle/
@@ -29,3 +29,6 @@ npm i -g expo fixpack mversion eslint prettier yarn
 
 # Configure macos
 . ./macos.sh
+
+# Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
