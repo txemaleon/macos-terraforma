@@ -12,20 +12,15 @@ brew bundle
 # Install dotfiles, Terminal config, and Sublime Text Configs
 mkdir -p ~/.config/
 git clone git@github.com:txemaleon/dotfiles.git ~/.config/dotfiles
-for f in bash_profile fixpackrc gitconfig gitignore inputrc npmrc slate tmux.conf vimrc zshrc; do rm -rf ~/.$f; ln -s ~/.config/dotfiles/$f ~/.$f; done
+~/.config/tools/install.sh
 
-# Vim Config
-mkdir -p ~/.vim/bundle/
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-
-# Sublime Text Config
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-git clone git@github.com:txemaleon/Sublime-Text.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -s ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ ~/.config/sublime
+# Link mackup
+ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/.config/.mackup ~.mackup
+ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/.config/.mackup.cfg ~.mackup.cfg
+mackup restore
 
 # Install node tools
-npm i -g expo fixpack mversion eslint prettier yarn
+sed 's/#.*//' Npmfile | xargs npm install -g
 
 # Configure macos
 . ./macos.sh
