@@ -15,8 +15,8 @@ git clone git@github.com:txemaleon/dotfiles.git ~/.config/dotfiles
 ~/.config/tools/install.sh
 
 # Link mackup
-ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/.config/.mackup ~.mackup
-ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/.config/.mackup.cfg ~.mackup.cfg
+ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/.config/.mackup ~/.mackup
+ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/.config/.mackup.cfg ~/.mackup.cfg
 mackup restore
 
 # Install node tools
