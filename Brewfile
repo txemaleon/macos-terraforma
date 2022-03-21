@@ -6,19 +6,27 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "planetscale/tap"
+tap "yt-dlp/taps"
 brew "asimov"
 brew "atomicparsley"
 brew "bash"
 brew "bat"
 brew "unbound"
+brew "harfbuzz"
 brew "ffmpeg"
+brew "fzf"
 brew "gh"
 brew "git"
 brew "git-flow"
+brew "gitui"
+brew "gitup"
 brew "htop"
 brew "imagemagick"
+brew "instalooter"
 brew "mackup"
 brew "mas"
+brew "yt-dlp"
 brew "node@14"
 brew "pwgen"
 brew "rclone"
@@ -28,13 +36,15 @@ brew "ruby"
 brew "ssh-copy-id"
 brew "tmux"
 brew "tree"
+brew "uni2ascii"
 brew "vercel-cli"
 brew "watchman"
 brew "wget"
 brew "wifi-password"
 brew "wp-cli"
 brew "wp-cli-completion"
-brew "youtube-dl"
+brew "planetscale/tap/pscale"
+brew "yt-dlp/taps/yt-dlp"
 cask "authy"
 cask "battle-net"
 cask "caffeine"
@@ -49,15 +59,14 @@ cask "font-smoothing-adjuster"
 cask "google-chrome"
 cask "insomnia"
 cask "kapitainsky-rclone-browser"
-cask "logitech-firmwareupdatetool"
+cask "keyboardcleantool"
 cask "logitech-options"
 cask "microsoft-auto-update"
 cask "microsoft-edge"
+cask "netnewswire"
 cask "notion"
-cask "obs"
 cask "obsidian"
 cask "openemu"
-cask "phoenix"
 cask "postman"
 cask "qlcolorcode"
 cask "qlimagesize"
@@ -75,16 +84,22 @@ cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
 cask "zoom"
+mas "Actions", id: 1586435171
 mas "AdGuard for Safari", id: 1440147259
 mas "Collected", id: 1511343960
+mas "Data Jar", id: 1453273600
 mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
 mas "Hush", id: 1544743900
 mas "iMovie", id: 408981434
+mas "Jayson", id: 1468691718
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Quick Draft", id: 1496067471
 mas "Refined GitHub", id: 1519867270
 mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
 mas "Things", id: 904280696
+mas "Twitter", id: 1482454543
 mas "Xcode", id: 497799835
